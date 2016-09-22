@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GitSearch</title>
+	<script src="/js/jquery.js"></script>
+	<link rel="stylesheet" href="/js/materialize.min.css">
+	<script src="/js/materialize.min.js"></script> 
+	<script src="/js/json-to-table.js"></script>
+	<script src="/main.js"></script>
+</head>
+<body>
+	<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Поиск пользователей GitHub</h1>
+      <div class="row center">
+      	<div id="form-init">
+	        <h5 class="header col s12 light">Введите интересующий вас регион на латинице:</h5>
+	        <div class="col s6 offset-s3">	        
+			    <div class="row center">
+			    	<div class="col s7">
+			    		<input type="text" id="search-input" value="perm">
+			    	</div>
+			    	<div class="col s1">
+			    		<input type="text" id="page-input" placeholder="№ страницы">
+			    	</div>
+			    	<div class="col s4">
+			   			<input type="submit" class="btn-large waves-effect waves-light orange" id="search-btn" value="Искать">
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col s12">
+		<div class="col s6 offset-s3">
+			<a class="btn-large waves-effect waves-light orange" id="save-btn">Сохранить в CSV</a>
+		</div>
+		<div class="col s6 offset-s3 progress orange lighten-5">		
+		      <div class="determinate orange darken-2" style="width: 0%"></div>
+		</div>
+			<div class="table-js"></div>
+		</div>
+      </div> 
+    </div>
+  </div>
+</body>
+</html>
